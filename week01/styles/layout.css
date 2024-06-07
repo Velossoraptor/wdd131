@@ -1,3 +1,9 @@
+.parent {
+    display: grid;
+    grid-template: auto auto auto auto/ 25% 25% 25% 25%;
+    width: 70vw;
+}
+
 .navigation {
     display: flex;
     align-items: center;
@@ -12,16 +18,11 @@
     display: block;
     text-align: center;
     padding: 20px;
+    width: 25%;
 }
 
 .navigation a:hover {
     background-color: rgb(108, 122, 134);
-}
-
-.parent {
-    display: grid;
-    grid-template: auto auto auto auto/ auto auto auto auto;
-    width: 70vw;
 }
 
 .navbar {
@@ -33,7 +34,13 @@
     grid-column: 1/4;
     grid-row: 3/4;
     height: 200px;
+    width: 100%;
     background-color: rgb(200, 219, 238);
+    /* border: 1px solid black; */
+    display: block;
+}
+
+.left h2 {
     padding-left: 10px;
 }
 
@@ -41,7 +48,12 @@
     grid-column: 4/5;
     grid-row: 3/4;
     height: 200px;
+    width: 100%;
     background-color: rgb(216, 232, 247);
+    /* border: 1px solid black; */
+}
+
+.right h2 {
     padding-left: 10px;
 }
 
