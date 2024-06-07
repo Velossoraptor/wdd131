@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     align-content: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: rgb(144, 164, 184);
 }
 
@@ -21,7 +21,7 @@
 .parent {
     display: grid;
     grid-template: auto auto auto auto/ auto auto auto auto;
-    width: 90vw;
+    width: 70vw;
 }
 
 .navbar {
@@ -34,7 +34,7 @@
     grid-row: 3/4;
     height: 200px;
     background-color: rgb(200, 219, 238);
-    padding: 20px;
+    padding-left: 10px;
 }
 
 .right {
@@ -42,7 +42,7 @@
     grid-row: 3/4;
     height: 200px;
     background-color: rgb(216, 232, 247);
-    padding: 20px;
+    padding-left: 10px;
 }
 
 footer {
@@ -58,6 +58,6 @@ header {
     grid-row: 1/2;
     color: rgb(118, 42, 42);
     height: 100px;
-    padding-top: 20px;
+    padding-left: 10px;
     background-color: rgb(180, 204, 228);
 }
