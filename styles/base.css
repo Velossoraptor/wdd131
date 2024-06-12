@@ -1,0 +1,89 @@
+body {
+    width: 70vw;
+}
+
+.container {
+    width: 70vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    /* border: solid 1px black; */
+}
+
+header {
+    width: 70vw;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    background-color: rgb(105, 24, 42);
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+nav {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    background-color: rgb(255, 159, 159);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    width: 25%;
+}
+
+nav a:hover {
+    background-color: rgb(229, 127, 127);
+}
+
+main {
+    align-items: center;
+    display: grid;
+    grid-template: auto/ 66% 34%;
+}
+
+footer {
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: solid 1px rgb(80, 40, 40);
+    border-radius: 10px;
+    max-height: fit-content;
+}
+
+.card h1 {
+    color: white;
+    background-color: rgb(105, 24, 42);
+    padding: 10px;
+    padding-top: 10px;
+    margin-top: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+}
+.card p {
+    margin-left: 10px;
+}
+.selfie {
+    width: 200px;
+    height: auto;
+    float: right;
+    padding: 10px;
+    padding-top: 0;
+    margin: 0;
+}
