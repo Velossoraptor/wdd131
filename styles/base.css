@@ -76,9 +76,15 @@ footer {
     border-top-right-radius: 8px;
     text-align: center;
 }
+
 .card p {
     margin-left: 10px;
 }
+
+.card a {
+    color: black;
+}
+
 .selfie {
     width: 200px;
     height: auto;
