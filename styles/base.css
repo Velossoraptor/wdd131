@@ -37,12 +37,12 @@ nav {
     align-items: center;
     align-content: center;
     justify-content: space-around;
-    background-color: rgb(255, 159, 159);
+    background-color: rgb(247, 157, 157);
 }
 
 nav a {
     text-decoration: none;
-    color: white;
+    color:rgb(105, 24, 42);
     display: block;
     text-align: center;
     padding: 20px;
@@ -75,7 +75,6 @@ footer {
     border: solid 1px rgb(80, 40, 40);
     border-radius: 10px;
     max-height: fit-content;
-    /* display: flex; */
     width: 96%;
     height: 100%;
 }
