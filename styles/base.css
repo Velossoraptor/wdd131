@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 html,
 body {
     margin: 0;
@@ -7,13 +9,13 @@ body {
 
 body {
     width: 70vw;
+    font-family: Roboto;
 }
 
 .container {
     width: 70vw;
     margin-left: 15vw;
     margin-right: 15vw;
-    /* border: solid 1px black; */
 }
 
 header {
@@ -42,7 +44,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color:rgb(105, 24, 42);
+    color: rgb(105, 24, 42);
     display: block;
     text-align: center;
     padding: 20px;
@@ -57,6 +59,7 @@ main {
     align-items: center;
     display: grid;
     grid-template: auto/ 66% 34%;
+    max-width: 80vw;
 }
 
 footer {
