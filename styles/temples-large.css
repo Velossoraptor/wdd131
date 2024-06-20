@@ -1,0 +1,14 @@
+@media (min-width: 37.5em) {
+    #hamburger {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+    }
+}
