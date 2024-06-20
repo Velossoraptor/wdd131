@@ -29,6 +29,7 @@ a {
 
 #hamburger::before {
     content: "☰";
+    color: white;
 }
 
 #hamburger.open::before {
