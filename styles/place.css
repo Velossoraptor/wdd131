@@ -1,0 +1,198 @@
+:root {
+    --mexicoRed: rgb(182, 49, 49);
+    --mexicoGreen: rgb(88, 168, 88);
+}
+* {
+    font-family: Roboto;
+}
+
+@media (min-width:37.5em) {
+
+    main,
+    header {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    header {
+        padding: 3rem;
+        background-color: var(--mexicoRed);
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    main img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    footer {
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 0;
+        text-align: center;
+        background-color: var(--mexicoRed);
+        padding: 1rem;
+        color: white;
+    }
+
+    h2.data {
+        position: absolute;
+        top: 20rem;
+        left: 2rem;
+        z-index: 2;
+    }
+
+    div.data {
+        position: absolute;
+        top: 20rem;
+        left: 2rem;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 300px;
+        margin-left: 5px;
+        padding-top: 6rem;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2.weather {
+        position: absolute;
+        top: 40rem;
+        right: 4.5rem;
+        z-index: 2;
+        width: 13%;
+    }
+
+    h2.weather::after {
+        content: "   ⛅";
+    }
+
+    div.weather {
+        position: absolute;
+        top: 40rem;
+        right: 2rem;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 250px;
+        margin-left: 5px;
+        padding-top: 5.5rem;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.weather table {
+        margin-right: 3rem;
+    }
+
+    table td {
+        height: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .leftCell {
+        text-align: right;
+    }
+
+    .rightCell {
+        text-align: left;
+    }
+
+    #temp::after {
+        content: "°C";
+    }
+
+    #windspeed::after {
+        content: "km/h";
+    }
+
+    h2 {
+        text-align: left;
+        background-color: var(--mexicoGreen);
+        color: white;
+        padding: 1rem;
+        width: 15%;
+    }
+
+    #invisIcon {
+        display: none;
+    }
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}

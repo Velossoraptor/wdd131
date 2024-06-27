@@ -1,0 +1,41 @@
+@media(max-width:64em) {
+
+    div.data,
+    h2.data,
+    div.weather,
+    h2.weather {
+        position: static;
+        background-color: white;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    div {
+        margin-bottom: 4rem;
+    }
+
+    h2 {
+        color: black;
+    }
+
+    h2.weather::after {
+        content: "";
+    }
+    div.weather {
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+    }
+    div.weather table {
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+    #invisIcon {
+        display: block;
+        width: 100px;
+        height: auto;
+        align-self: center;
+    }
+}

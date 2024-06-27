@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 - Place - Talia Olsen</title>
+    <meta name="description" content="Practice making dynamic webpages for a country">
+    <meta name="Author" content="Talia Olsen">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-small.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Mexico</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/hero-large-ratio.webp" media="(min-width: 1000px)">
+            <img src="images/hero-small-ratio.webp" alt="Pyramid" width="750" height="1000">
+        </picture>
+        <h2 class="data">Data</h2>
+        <div class="data">
+            <table>
+                <tr>
+                    <td class="leftCell"><b>Area:</b> </td>
+                    <td class="rightCell">1.973 million km²</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Population:</b> </td>
+                    <td class="rightCell">127.5 million</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Capital:</b> </td>
+                    <td class="rightCell">Mexico City</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Language(s):</b> </td>
+                    <td class="rightCell">Spanish</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Currency:</b> </td>
+                    <td class="rightCell">Pesos</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Time Zone:</b> </td>
+                    <td class="rightCell">GMT-6</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Calling Code:</b> </td>
+                    <td class="rightCell">+52</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Internet TLD:</b> </td>
+                    <td class="rightCell">.mx</td>
+                </tr>
+            </table>
+        </div>
+        <h2 class="weather">Weather</h2>
+        <div class="weather">
+            <img id="invisIcon" src="images/weather-icon.svg" alt="weather icon" width="100" height="100">
+            <table>
+                <tr>
+                    <td class="leftCell"><b>Temperature: </b> </td>
+                    <td class="rightCell" id="temp">31</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Conditions: </b> </td>
+                    <td class="rightCell">Partly Cloudy</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Wind: </b> </td>
+                    <td class="rightCell" id="windspeed">16</td>
+                </tr>
+                <tr>
+                    <td class="leftCell"><b>Wind Chill: </b> </td>
+                    <td class="rightCell" id="windchill"></td>
+                </tr>
+
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span>🦕 Talia Olsen 🦕 Canada</p>
+        <p id="lastModified">Last Modified: </p>
+    </footer>
+</body>
+
+</html>
