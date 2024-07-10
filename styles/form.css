@@ -1,13 +1,14 @@
 * {
     --background1: rgb(99, 37, 37);
     --background2: rgb(197, 162, 162);
-    --background3: rgb(233, 219, 219);
+    --background3: rgb(246, 241, 241);
 }
 
 form,
 footer,
 h1 {
     width: 30%;
+    min-width: 450px;
     margin: 0 auto;
 }
 
@@ -32,10 +33,10 @@ div {
 h1 {
     background-color: var(--background1);
     color: white;
-    /*padding: .5rem;*/
 }
 
-input[type="textarea"],
+textarea,
+input[type="text"],
 input[type="date"],
 select {
     background-color: var(--background2);

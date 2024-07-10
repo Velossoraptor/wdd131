@@ -37,8 +37,7 @@
             <label><input type="radio" name="rating" id="four" required>⭐⭐⭐⭐</label>
             <label><input type="radio" name="rating" id="five" required>⭐⭐⭐⭐⭐</label>
 
-            <label>Date of Installation <input type="date" name="date-installed" id="date-installed"
-                    value="date-installed"></label>
+            <label>Date of Installation <input type="date" name="date-installed" id="date-installed" required></label>
 
             <div>Which features did you find useful in the product? <br><i>(Check all that apply)</i></div>
             <label><input type="checkbox" id="ease" name="ease" value="yes">Ease of Use</label>
@@ -46,10 +45,12 @@
             <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
             <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
 
-            <label>Written review <i>(optional)</i><input type="textarea" id="review" name="review"></label>
-            <label>User Name <i>(optional)</i><input type="textarea" id="username" name="username"></label>
+            <!-- <label>Written review <i>(optional)</i><input type="text" id="review" name="review"></label> -->
+             <div>Written review</div>
+             <textarea id="review" name="review"></textarea>
+            <label>User Name <i>(optional)</i><input type="text" id="username" name="username"></label>
 
-            <input type="submit" value="Share my Review">
+            <input type="submit" value="Share my Review" id="share">
         </form>
     </main>
     <footer>
