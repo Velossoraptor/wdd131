@@ -53,6 +53,16 @@ div {
     padding: 1rem;
 }
 
+#wireframe h2{
+    text-align: center;
+} 
+
+img {
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+}
+
 /* ----- Font ----- */
 .roboto-thin {
     font-family: "Roboto", sans-serif;
