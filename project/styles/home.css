@@ -18,6 +18,29 @@ footer p {
     color: var(--headingText2);
 }
 
+#hamburger {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+#hamburger::before {
+    content: "☰";
+    color: white;
+}
+
+#hamburger.open::before {
+    content: "❌";
+}
+
+.open a {
+    display: block;
+}
+
 nav {
     margin: 0;
     display: flex;
@@ -25,15 +48,19 @@ nav {
     align-content: center;
     justify-content: space-around;
     background-color: var(--background2);
+    text-align: center;
+    flex-direction: column;
+    list-style: none;
 }
 
 nav a {
     text-decoration: none;
     color: var(--headingText2);
-    display: block;
     text-align: center;
     padding: 20px;
     width: 30%;
+    display: none;
+    font-size: 1.5rem;
 }
 
 nav a:hover {
@@ -44,13 +71,18 @@ main,
 header,
 footer {
     margin: 0 auto;
-    width: 65%;
     font-family: Roboto;
     border-radius: 6px;
 }
 
 main {
     background-color: var(--purp);
+    width: 70%;
+}
+
+header h2,
+p {
+    text-align: center;
 }
 
 h1 {
@@ -65,7 +97,8 @@ h2 {
     color: var(--headingText1);
 }
 
-p {
+p,
+figcaption {
     color: var(--text);
 }
 
@@ -73,7 +106,7 @@ p {
     border-radius: 50%;
     width: 200px;
     height: auto;
-    float: left;
+    float: center;
     padding: .5rem;
 }
 
@@ -88,19 +121,21 @@ p {
 }
 
 .about-me {
-    text-align: left;
+    text-align: center;
     width: 80%;
     margin: 0 auto;
     padding-top: .5rem;
+    display: grid;
+    place-items: center;
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-    grid-gap: 10px;
-    place-items: center;
+    display: block;
     margin: 0 auto;
     padding: 5px;
+    padding-bottom: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
     background-color: var(--background3);
 }
 
@@ -109,10 +144,12 @@ p {
     overflow: hidden;
     width: 100%;
     height: 100%;
+    min-width: 12rem;
 }
 
 .gallery h2 {
     grid-column: 1/4;
+    text-align: center;
 }
 
 .gallery-img figure {
@@ -130,16 +167,16 @@ p {
     text-align: center;
 }
 
-.gallery-img figure img:hover {
+.selectedImg {
+    overflow: visible;
+    z-index: 1;
+}
+
+.figSelectedImg {
     background-color: var(--background1);
     padding: 10px;
     border: 1px solid var(--background2);
-    max-height: 22rem;
-}
-
-.gallery-img:hover {
-    overflow: visible;
-    z-index: 1;
+    height: 22rem;
 }
 
 /*      Fonts       */

@@ -1,0 +1,52 @@
+@media (min-width: 37.5em) {
+    #hamburger {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #pfp {
+        border-radius: 50%;
+        width: 200px;
+        height: auto;
+        float: left;
+        padding: .5rem;
+    }
+
+    .about-me {
+        text-align: left;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 5px;
+    }
+
+    .about-me h2 {
+        text-align: center;
+        padding-top: 2rem;
+        grid-column: 1/-1;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+        grid-gap: 10px;
+        place-items: center;
+        margin: 0 auto;
+        padding: 5px;
+        padding-bottom: 2rem;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        background-color: var(--background3);
+    }
+}
