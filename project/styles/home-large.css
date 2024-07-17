@@ -49,4 +49,13 @@
         margin-bottom: 2.5rem;
         background-color: var(--background3);
     }
+    .gallery-table{
+        grid-column:1/-1;
+        max-width: 80%;
+    }
+
+    .gallery-table table, .gallery-table table th, .gallery-table table td{
+        padding: .5rem;
+    }
+    
 }

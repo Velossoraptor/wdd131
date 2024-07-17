@@ -160,7 +160,7 @@ figcaption {
 
 .gallery-img figure img {
     width: auto;
-    max-height: 25rem;
+    height: 25rem;
 }
 
 .gallery-img figcaption {
@@ -177,6 +177,20 @@ figcaption {
     padding: 10px;
     border: 1px solid var(--background2);
     height: 22rem;
+}
+
+.gallery-table{
+    grid-column:1/-1;
+}
+.gallery-table table, .gallery-table table th, .gallery-table table td {
+    border: 2px solid var(--background2);  
+}
+.gallery-table table {
+    border-collapse: collapse;
+    color: var(--text);
+}
+.gallery-table table, .gallery-table table th, .gallery-table table td{
+    background-color: rgba(255, 255, 255, 0.373);
 }
 
 /*      Fonts       */
