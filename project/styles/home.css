@@ -205,6 +205,12 @@ figcaption {
     margin: 0 auto;
 }
 
+.form p {
+    font-size: .9rem;
+    color: var(--headingText1);
+    text-align: left;
+}
+
 .order-form fieldset {
     margin: 2rem 0;
     border: 1px solid #ddd;
@@ -222,12 +228,6 @@ figcaption {
     padding-top: 1rem;
     color: var(--text);
     font-size: .9rem;
-}
-
-.order-form p {
-    font-size: .9rem;
-    color: var(--headingText1);
-    text-align: left;
 }
 
 .order-form input[type="text"],
