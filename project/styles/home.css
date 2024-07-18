@@ -224,10 +224,10 @@ figcaption {
     font-size: .9rem;
 }
 
-.order-form div {
-    padding-top: 1rem;
+.order-form p {
     font-size: .9rem;
     color: var(--headingText1);
+    text-align: left;
 }
 
 .order-form input[type="text"],
