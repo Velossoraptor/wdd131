@@ -1,6 +1,6 @@
 :root {
     --background1: #c15452;
-    --background2: #7Fb685;
+    --background2: #528058;
     --background3: #ded4d9;
     --headingText1: #40141b;
     --headingText2: white;
@@ -64,7 +64,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #528058;
+    background-color: #7Fb685;
+    color: var(--headingText1);
 }
 
 main,
@@ -106,18 +107,17 @@ figcaption {
     border-radius: 50%;
     width: 200px;
     height: auto;
-    float: center;
     padding: .5rem;
 }
 
 .social {
     text-decoration: none;
-    color: var(--background1);
+    color: #7a302f;
 }
 
 .social:visited {
     text-decoration: none;
-    color: var(--background1);
+    color: #7a302f;
 }
 
 .about-me {
