@@ -1,10 +1,12 @@
 const hamButton = document.querySelector('#hamburger');
 const navigation = document.querySelector('nav');
+
 const typeDrop = document.querySelector('#typeDrop');
 const charNum = document.querySelector('#quantity');
 const totalPrice = document.querySelector('#totalPrice');
-let numReviews = 0;
-const shareReviewButton = document.querySelector('#order');
+
+let numOrders = 0;
+const orderButton = document.querySelector('#order');
 
 localStorage.setItem('basePrice', "0");
 localStorage.setItem('totalCost', "0");
@@ -77,18 +79,18 @@ function getOptions(types) {
 
 getOptions(types);
 
-function setNumReviews() {
-    localStorage.setItem('numReviews', JSON.stringify(numReviews));
+function setNumOrders() {
+    localStorage.setItem('numOrders', JSON.stringify(numOrders));
 }
 
-function getNumReviews() {
-    numReviews = JSON.parse(localStorage.getItem('numReviews'));
+function getNumOrders() {
+    numOrders = JSON.parse(localStorage.getItem('numOrders'));
 }
 
-shareReviewButton.addEventListener('click', function () {
-    getNumReviews();
-    numReviews++;
-    setNumReviews();
+orderButton.addEventListener('click', function () {
+    getNumOrders();
+    numOrders++;
+    setNumOrders();
 });
 
 charNum.onchange = function () {
