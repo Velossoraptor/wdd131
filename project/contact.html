@@ -30,30 +30,38 @@
         <h2>Ordering</h2>
         <p>The best way to contact me for additional questions is at my Instagram handle <a
                 href="https://www.instagram.com/velossoraptor/" target="blank" class="social">@Velossoraptor</a>, or at
-            my email Velossoraptor at gmail dot com.</p>
+            my email: Velossoraptor at gmail dot com. <br>Once your order is submitted, I'll contact you with questions
+            about your order to finalize and begin working!</p>
     </header>
     <main>
         <!-- Want to include a form and a table with prices that changes depending on what they put in -->
-        <div class="gallery">
-            <h2>Character Comissions - D&D/Gaming Groups<br>(Click to expand/shrink)</h2>
-            <div class="gallery-img">
-                <figure>
-                    <img src="images/examples/party shards.jpg" alt="Art example of D&D party" class="gal-img">
-                    <figcaption>Dungeons and Dragons Comission</figcaption>
-                </figure>
-            </div>
-            <div class="gallery-img">
-                <figure>
-                    <img src="images/examples/eyes doors.png" alt="Art example of game fanart" class="gal-img">
-                    <figcaption>Fanart Example (Doors)</figcaption>
-                </figure>
-            </div>
-            <div class="gallery-img">
-                <figure>
-                    <img src="images/examples/mc people.png" alt="Art example of game group commission" class="gal-img">
-                    <figcaption>Game Comission (Minecraft characters)</figcaption>
-                </figure>
-            </div>
+        <div class="form">
+            <h1>Basic Order Form</h1>
+            <form method="get" action="thanks.html" class="order-form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>Name* <input type="text" name="fname" required></label>
+                    <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label>Preferred form of contact <input type="text" name="othercontact"
+                            placeholder="instagram @Velossoraptor"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Comission Information</legend>
+                    <label>Type*
+                        <select name="type" id="typeDrop" required>
+                            <option value="" disabled selected>Please select...</option>
+                        </select>
+                    </label>
+                    <label>Number of Characters
+                        <input type="number" id="quantity" name="quantity" min="1" max="10">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Estimated Total</legend>
+                    <label><input type="text" name="total" id="totalPrice" value="$" readonly></label>
+                </fieldset>
+                <input type="submit" value="Order" id="order">
+            </form>
         </div>
     </main>
     <footer>

@@ -179,18 +179,101 @@ figcaption {
     height: 22rem;
 }
 
-.gallery-table{
-    grid-column:1/-1;
+.gallery-table {
+    grid-column: 1/-1;
 }
-.gallery-table table, .gallery-table table th, .gallery-table table td {
-    border: 2px solid var(--background2);  
+
+.gallery-table table,
+.gallery-table table th,
+.gallery-table table td {
+    border: 2px solid var(--background2);
 }
+
 .gallery-table table {
     border-collapse: collapse;
     color: var(--text);
 }
-.gallery-table table, .gallery-table table th, .gallery-table table td{
+
+.gallery-table table,
+.gallery-table table th,
+.gallery-table table td {
     background-color: rgba(255, 255, 255, 0.373);
+}
+
+.form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.order-form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem;
+}
+
+.order-form legend {
+    color: var(--headingText1);
+    padding: 0 .5rem;
+}
+
+.order-form label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--text);
+    font-size: .9rem;
+}
+
+.order-form div {
+    padding-top: 1rem;
+    font-size: .9rem;
+    color: var(--headingText1);
+}
+
+.order-form input[type="text"],
+.order-form input[type="tel"],
+.order-form input[type="email"],
+.order-form input[type="url"],
+.order-form input[type="date"],
+.order-form select,
+.order-form input[type="number"] {
+    background-color: var(--background3);
+    display: block;
+    border: 1px solid var(--headingText1);
+    border-radius: 6px;
+    padding: .75rem;
+    color: var(--text);
+    width: 80%;
+    max-width: 300px;
+    appearance: none;
+}
+
+.order-form input[type="radio"],
+.order-form input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.order-form input[type="submit"] {
+    border: 2px solid var(--headingText1);
+    border-radius: 6px;
+    background-image: linear-gradient(var(--background1), var(--headingText1));
+    color: var(--headingText2);
+    padding: .8rem;
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem 20% 2rem 25%;
+    font-size: 1.5rem;
+}
+.order-form input[type="submit"]:hover {
+    background-image: linear-gradient(var(--background1), var(--background2));
+}
+
+.order-form input:required {
+    border-left: solid 8px var(--background1);
+}
+
+.order-form input:required:valid {
+    border-left: solid 8px var(--background2);
 }
 
 /*      Fonts       */
